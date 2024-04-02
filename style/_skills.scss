@@ -88,6 +88,7 @@
         display: flex;
         @include cent-all();
         margin-top: 10px;
+        font-size: 8pt;
         & span {
           margin: 0 10px 0 10px;
         }
