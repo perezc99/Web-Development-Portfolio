@@ -11,6 +11,11 @@
 <body>
     
     <div id="whole-page">
+        <script src="./libraries/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+
+        <script> $("document").ready((function() { $("#nav-bar").load("./website_components/nav.html"); })); </script> 
         <canvas id="space"></canvas>
         <header class="gradient-background">
             <section id="nav-bar" class="nav-bar"></section>
@@ -170,11 +175,7 @@
             </div>
         </section>
 
-        <script src="./libraries/jquery-3.7.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="./index.js"></script>
-
-        <script> $("document").ready((function() { $("#nav-bar").load("./website_components/nav.html"); })); </script>  
+         
         
         <footer class="gradient-background">
             <a class="opac-link txt2" href="./web_pages/contact_me.html" style="font-size: 19pt;">Contact</a>
