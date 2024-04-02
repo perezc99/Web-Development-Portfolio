@@ -22,3 +22,4 @@ src="../svg files/svg education/mortarboard.svg" alt="mortarboard symbol"
                 //     text-decoration: underline;
                 //     padding-bottom: 20px;
                 // }
+

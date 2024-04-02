@@ -1,0 +1,123 @@
+#whole-page {
+  #main-skills {
+    .container {
+      // margin-top: 15px;
+      // margin-bottom: 15px;
+      // color: white;
+      // padding: 15px;
+      // padding-bottom: 30px;
+      // margin-bottom: 30px;
+      // //min-width: 85%;
+      margin-bottom: 65px;
+      position: relative;
+  
+    .row {
+      & .skill-grand-tit {
+        display: flex;
+        @include cent-all();
+        @include top-line();
+        margin: 10px 0 10px 0;
+      }
+      & .skill-grand-tit-sm {
+        display: flex;
+        @include cent-all();
+        font-weight: bold;
+        font-size: 9.5pt;
+        margin: 0 10px 20px 10px;
+      }
+
+
+      & .cont-skills {
+        &.lang-skills {
+          display: grid;
+          grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+        }
+        &.tech-skills {
+          display: grid;
+          grid-template: repeat(1, auto) / repeat(6, 1fr);
+          & .cont-grid-skills {
+            grid-column: span 2;
+          }
+        }
+        & .cont-grid-skills {
+
+          display: grid;
+          grid-template: repeat(3, 1fr) / 10fr 30fr 20fr 30fr 10fr;
+          grid-auto-rows: auto;
+          padding: 15px;
+          & .skill-tit {
+            grid-column: span 5;
+            display: flex;
+            min-width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+          & .skill-bar {
+            grid-column: span 5;
+            & .progress {
+              background-color: $colC;
+              --bs-progress-bar-bg: #50727B;
+            }
+          }
+          & > .competency-levels {
+            //min-width: 100%;
+            font-size: 10pt;
+            display: flex;
+            flex-wrap: wrap;
+            &.beg { text-align: left; }
+            &.nov { text-align: center; }
+            &.int { text-align: center; }
+            &.pro { text-align: center; }
+            &.adv { text-align: right; }
+            & > .competency-levels-inA {
+              flex-grow: 1;
+              min-width: 100%;
+            }
+            & > .competency-levels-inB {
+              flex-grow: 1;
+              min-width: 100%;
+            }
+          }
+        }
+      }
+      
+      & .legend {
+        display: flex;
+        @include cent-all();
+        margin-top: 10px;
+        & span {
+          margin: 0 10px 0 10px;
+        }
+      }
+    }
+  }
+  }
+}
+
+
+// .cont-card-col2 {
+//   background-color: blue;
+// }
+
+// .container2 {
+//   background: linear-gradient(to right, $colB, $colC);
+//   position: absolute;
+//   right: 5%;
+//   left: 5%;
+//   top: 10%;
+//   bottom: 8%;
+  
+//   & .row.row2 {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     min-width: 100%;
+//     min-height: 100%;
+//     background-color: #303040;
+//   }
+  
+// }

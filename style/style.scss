@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'mixins';
-@import 'containers';
+@import 'skills';
 @import 'gradient';
 @import 'about-me';
 @import 'education';
@@ -100,19 +100,6 @@ body {
   .tit {
     font-weight: bold;
     font-size: 19pt;
-    &.skill-grand-tit {
-      text-decoration: underline;
-      display: flex;
-      @include cent-all();
-      margin-bottom: 20px;
-    }
-    &.skill-grand-tit-sm {
-      display: flex;
-      @include cent-all();
-      margin-bottom: 20px;
-      font-size: 9.5pt;
-    }
-
   }
 
   // controls BS

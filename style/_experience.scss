@@ -27,23 +27,18 @@
                   &.exp4-st { grid-template-rows: auto 7fr auto; }
                 
                 
+                  
+
                   & .ibm-sme {
                     width: 100%;
                     height: 85px;
                     background-color: $colA;
                     & .top { margin-bottom: 10px; }
-                    // &.top-cent {
-                    //   font-size: 18pt;
-                    //   font-weight: bold;
-                    //   display: flex;
-                    //   align-items: center;
-                    //   justify-content: right;
-                    //   text-align: right;
-                    //   & .caret-img {
-                    //     margin-left: 5px;
-                    //     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(27deg) brightness(99%) contrast(103%);
-                    //   }
-                    //}
+                    & + .bar {
+                      background-color: $colA;
+                      min-width: 100%;
+                      min-height: 100%;
+                    }
                     & .btm { margin-top: 10px; }
                   }
                 
@@ -52,6 +47,11 @@
                     height: 85px;
                     background-color: $colB;
                     & .top { margin-bottom: 10px; }
+                    & + .bar {
+                      background-color: $colB;
+                      min-width: 100%;
+                      min-height: 100%;
+                    }
                     & .btm { margin-top: 10px; }
                   }
                 
@@ -60,6 +60,11 @@
                     height: 85px;
                     background-color: $colC;
                     & .top { margin-bottom: 10px; }
+                    & + .bar {
+                      background-color: $colC;
+                      min-width: 100%;
+                      min-height: 100%;
+                    }
                     & .btm { margin-top: 10px; }
                   }
                 
@@ -68,6 +73,11 @@
                     height: 85px;
                     background-color: $colD;
                     & .top { margin-bottom: 10px; }
+                    & + .bar {
+                      background-color: $colD;
+                      min-width: 100%;
+                      min-height: 100%;
+                    }
                     & .btm { margin-top: 10px; }
                   }
                 
