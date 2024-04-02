@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3",
+    "scss": "^0.2.4"
+  },
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "personal web repository",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cesar Perez",
+  "license": "ISC"
+}

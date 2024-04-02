@@ -1,0 +1,41 @@
+.gradient-background {
+    background: linear-gradient(300deg,  $colA, $colB, $colC, $colD, $colE, $colD, $colC, $colB, $colA);
+    background-size: 180% 180%; 
+    animation: gradient-animation 13s ease infinite;
+  }
+
+.gradient-background2 {
+  background: linear-gradient(300deg,  $colA, $colA, $colB, $colC, $colB, $colA, $colA);
+  background-size: 180% 180%; 
+  animation: gradient-animation 13s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background3 {
+  background: linear-gradient(0deg,  $colA, $colA, $colB, $colC, $colB, $colA, $colA);
+  background-size: 180% 180%; 
+  animation: gradient-animation2 13s ease infinite;
+}
+
+@keyframes gradient-animation2 {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}

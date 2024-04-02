@@ -1,0 +1,24 @@
+<!-- <iframe src="../website_components/nav.html"></iframe> -->
+
+src="../svg files/svg education/emoji-grin.svg" alt="emoji-grin symbol"
+src="../svg files/svg education/calculator.svg" alt="calculator symbol"
+src="../svg files/svg education/pc-display.svg" alt="pc-display symbol"
+src="../svg files/svg education/hdd-rack.svg" alt="hdd rack symbol"
+src="../svg files/svg education/database-lock.svg" alt="database lock symbol"
+src="../svg files/svg education/mortarboard.svg" alt="mortarboard symbol"
+
+<span style="font-size: 6pt;">[1]</span>
+
+
+
+
+                // & .lacc-deg-tit {
+                //     grid-column: span 3;
+                //     //width: 100%;
+                //     display: flex;
+                //     @include cent-all();
+                //     font-size: 22pt;
+                //     font-weight: bold;
+                //     text-decoration: underline;
+                //     padding-bottom: 20px;
+                // }

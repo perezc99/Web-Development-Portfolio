@@ -1,0 +1,11 @@
+@mixin cent-all {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin top-line {
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: underline;
+}

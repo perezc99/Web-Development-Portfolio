@@ -1,0 +1,200 @@
+#education {
+    .container {
+        min-width: 85%;
+        margin-bottom: 50px;
+        position: relative;
+        .row {
+            // degrees grid 
+            & .cont-grid {
+                display: grid;
+                grid-template: repeat(1, 1fr) / repeat(2, 2fr);                  
+            }
+
+            & .cont-grid3 {
+                display: grid;
+                grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+            }
+
+            // degree grid lacc
+            & .cont-grid, & .cont-grid3 {
+                & .cont-grid-item3 {
+                    display: grid;
+                    margin: 15px 0 10px 0;
+                    //grid-template: repeat(0, 1fr) / repeat(0, 1fr);
+                    // grid-template-areas: 
+                    //     "edge-top edge-top"
+                    //     "edge-top cent edge-btm"
+                    //     "edge-btm edge-btm";
+                    //height: 400px;
+                    &:hover {
+                        transform: scale(1.05);
+                        z-index: 1;
+                    }
+
+                    & .cont-grid-item3-edge-top { 
+                        grid-area: edge-top;
+                        display: flex;
+                        z-index: 2;
+                        .edges-edu {
+                            // display: inline-block;
+                            max-height: 100%;
+                            //max-width: 100%;
+                            fill: url("#grad1");
+                        }
+                    }
+                    & .cont-grid-item3-cent {
+                        background-color: $colD;
+                        z-index: 0;
+                        grid-area: cent;
+                        //padding: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        width: 400px;
+                        height: 400px;
+                        border-top-left-radius: 25px;
+                        border-bottom-right-radius: 25px;
+                        & .cont-grid-item3-cent-top {
+                            padding-top: 15px;
+                            width: 100%;
+                            & h2 {
+                                font-size: 18pt;
+                                font-weight: bold;
+                                //text-decoration: underline;
+                                height: auto;
+                            }
+                            display: flex;
+                            @include cent-all();
+                            & .imger {
+                                padding-right: 20px ;
+                            }
+                        }
+                        & .AA1, & .AA2, & .AA3, & .AS1, & .AS2, & .Ce1, & .Ce2, & .Ce3, & .BS1, & .BS2, & .Mi1, & .Mi2 {
+                            width: 100%;
+                            //font-weight: bold;
+                            display: flex;
+                            
+                            @include cent-all();
+                            & p {
+                                font-size: 15pt;
+                                width: 60%;
+                            }
+                        }
+                        & .imger {
+                            height: 65px;
+                            width: 65px;
+                            padding-right: 15px;
+                            filter: invert(63%) sepia(32%) saturate(288%) hue-rotate(84deg) brightness(89%) contrast(85%);
+                        }
+                    }
+
+                    & .cont-grid-item3-edge-btm { 
+                        grid-area: edge-btm;
+                        display: flex;
+                        z-index: 2;
+                        //@include cent-all();
+                        .edges-edu {
+                            //transform: scale(1, 1);
+                            //max-height: 100%;
+                            //max-width: auto;
+                            fill: url("#grad1");
+                        }
+                    }
+                    
+                }    
+            }
+
+            // courses grid 
+            & .cont-grid2 {
+                display: grid;
+                grid-template: repeat(9, 1fr) / repeat(5, 1fr);
+                grid-auto-rows: 1fr;
+                grid-auto-columns: 1fr;
+
+                &.lacc {
+                    grid-template: repeat(8, 1fr) / repeat(5, 1fr);
+                }
+        
+                & .cont-grid-item2 {
+                    margin: 20px 5px 20px 10px;
+
+                    & .cont-card-item-top {   
+                        border-top-left-radius: 50px;
+                        border-top-right-radius: 50px;
+                        background: linear-gradient(300deg, $colB, $colA, $colB);
+                        min-height: 20px;
+                    }
+                    
+                    & .cont-card-item-mid {
+                        background-color: $colD;
+                        padding: 15px;
+                        min-height: 90%;
+                        
+                        display: flex;
+                        flex-wrap: wrap;
+                        @include cent-all();
+                        
+                        & img {
+                            order: 2;
+                            margin-left: 13px;
+                            //flex-grow: 1;
+                        }
+                        & h2 {
+                            order: 1;
+                            text-align: center;
+                            width: 100%;
+                        }
+                        & > span {
+                            order: 3;
+                            height: 40px;
+                            margin-left: 4px;
+                            display: flex;
+                            align-items: end;
+                        }
+                        & p {
+                            order: 4;
+                            flex-grow: 1;
+                        }
+                    }
+            
+                    & .cont-card-item-btm { 
+                        border-bottom-left-radius: 50px;
+                        border-bottom-right-radius: 50px;
+                        background: linear-gradient(300deg, $colB, $colA, $colB);
+                        min-height: 20px;
+                    }
+
+
+                    &:hover {
+                        transform: scale(1.10);
+                        z-index: 1;
+                    }
+                }
+            
+                
+            }
+
+
+            & .top-line {
+                grid-column: span 5;
+                display: flex;
+                @include cent-all();
+                font-size: 22pt;
+                font-weight: bold;
+                text-decoration: underline;
+                width: 100%;
+            }
+
+            & .legend {
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                text-align: justify;
+                width: 100%;
+                font-size: 8pt;
+            }
+        }
+    }
+}
+

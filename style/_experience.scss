@@ -1,0 +1,131 @@
+#whole-page {
+  #main-exp {
+    .container {
+      position: relative;
+      margin-bottom: 75px;
+        .row {
+            & .cont-grid-exp {
+                display: grid;
+                grid-template: repeat(1, 1fr) / .8fr 19fr 20fr 20fr 79fr .8fr;
+                grid-auto-rows: auto;
+
+                .cont-grid-item-exp {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-bottom: 10px;
+                  &.tit {
+                    text-decoration: underline;
+                  }
+                }
+                
+                .exp4 {
+                  display: grid;
+                  &.exp4-sme { grid-template-rows: auto 14fr auto; }
+                  &.exp4-int { grid-template-rows: auto 7fr auto; }
+                  &.exp4-sa { grid-template-rows: auto 7fr auto; }
+                  &.exp4-st { grid-template-rows: auto 7fr auto; }
+                
+                
+                  & .ibm-sme {
+                    width: 100%;
+                    height: 85px;
+                    background-color: $colA;
+                    & .top { margin-bottom: 10px; }
+                    // &.top-cent {
+                    //   font-size: 18pt;
+                    //   font-weight: bold;
+                    //   display: flex;
+                    //   align-items: center;
+                    //   justify-content: right;
+                    //   text-align: right;
+                    //   & .caret-img {
+                    //     margin-left: 5px;
+                    //     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(27deg) brightness(99%) contrast(103%);
+                    //   }
+                    //}
+                    & .btm { margin-top: 10px; }
+                  }
+                
+                  & .ibm-int {
+                    width: 100%;
+                    height: 85px;
+                    background-color: $colB;
+                    & .top { margin-bottom: 10px; }
+                    & .btm { margin-top: 10px; }
+                  }
+                
+                  & .rpi-sa {
+                    width: 100%;
+                    height: 85px;
+                    background-color: $colC;
+                    & .top { margin-bottom: 10px; }
+                    & .btm { margin-top: 10px; }
+                  }
+                
+                  & .st-ment {
+                    width: 100%;
+                    height: 85px;
+                    background-color: $colD;
+                    & .top { margin-bottom: 10px; }
+                    & .btm { margin-top: 10px; }
+                  }
+                
+                  .content {
+                    display: none;
+                    width: 100%;
+                    
+                    
+                    & .line-bods {
+                      min-height: 100%;
+                      
+                      &.col1 { fill: $colA; }
+                      &.col2 { fill: $colB; }
+                      &.col3 { fill: $colC; }
+                      &.col4 { fill: $colD; }
+                    }
+                    & .exp4-cent-comp, .exp4-cent-date, .exp4-cent-roles {
+                      display: flex;
+                      height: 100%;
+                      @include cent-all();
+                    }
+                  }
+                  & .exp4-right {
+                    min-height: 100%;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    text-align: justify;
+                    & li {
+                      margin: 10px 18px 10px 0;
+                      height: 100%;
+                      // & > ol > li {
+                      //   //margin-top: 5px;
+                      // }
+                    }      
+                  }
+                }
+              }
+            .top-cent {
+              font-size: 18pt;
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+              justify-content: left;
+              text-align: left;
+            
+              .caret-img {
+                margin-left: 5px;
+                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(27deg) brightness(99%) contrast(103%);
+              }
+            }
+        }
+    }
+  }
+}
+
+
+
+// .main-exp > .container >.row .tit {
+//   //width: 100%;
+//   background-color: aqua;
+// }

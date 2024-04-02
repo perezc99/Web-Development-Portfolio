@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Resume</title>
+</head>
+
+<body>
+    <div id="whole-page">
+        <header class="gradient-background">
+            <section id="nav-bar" class="nav-bar"></section>
+        </header>
+
+        <section class="main-page"> 
+            <div class="container">
+                <div class="row">
+                    <div class="main-cont">
+                        <svg width="400px" height="400px" class="edges">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" class="stp1"></stop>
+                                    <stop offset="33%" class="stp2"></stop>
+                                    <stop offset="66%" class="stp3"></stop>
+                                    <stop offset="100%" class="stp4"></stop>
+                                    <stop offset="100%" class="stp5"></stop>
+                                </linearGradient>
+                            </defs> 
+                            <path stroke="green" d="M 20,0 Q0,0 0,20 V400 l10,-10 V20 Q10,10 20,10 H390 l10,-10 Z"></path>
+                        </svg>
+
+                        <div class="col-12">
+                            <div style="font-size: 55pt; font-weight: bold; margin-left: 5%; margin-top: 4%;"> WELCOME!</div>
+                        </div> 
+                        <div class="col-12">
+                            <div style="font-size: 20pt; margin-left: 5%; margin-top: 2%; margin-right: 5%; text-align: justify;"> 
+                                <p>
+                                    Hello, my name is Cesar A. Perez Oloroso. I am a young IT Professional and Software Developer 
+                                    living in Tucson, Arizona. I graduated from Rensselaer Polytechnic Institute
+                                    with a double Bachelor's in Computer Science and Computer Systems Engineering in 2021.
+                                    I am currently pursuing my Master's in Computer Science at the University of Colorado. 
+                                    I started offset my professional journey in January at 2020 working as a Hardware Engineering
+                                    Intern for IBM. This internship evolved to a full-time role as a Network Operations Center Engineer
+                                    and Subject Matter Expert, once I graduated from RPI. I left IBM at the beginning of 2023 to focus
+                                    on my education, and expand my skill and knowledge base through various certification programs. 
+                                    I am presently looking for new opportunities to gain professional experience, further enrich my knowledge, 
+                                    and add projects to my portfolio. I am willing to relocate for any of the aforementioned oppurtunities. 
+                                    
+                                </p>
+                            </div>
+                        </div> 
+
+                        <svg width="400px" height="400px" class="edges2">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" class="stp1"></stop>
+                                    <stop offset="33%" class="stp2"></stop>
+                                    <stop offset="66%" class="stp3"></stop>
+                                    <stop offset="100%" class="stp4"></stop>
+                                </linearGradient>
+                            </defs> 
+                            <path transform="scaleX(2)" d="M 380,400 Q400,400 400,380 V0 l-10,10 V380 Q390,390 380,390 H10 l-10,10 Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../libraries/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../index.js"></script>
+
+        <script> $("document").ready((function() { $("#nav-bar").load("../website_components/nav.html"); })); </script>  
+        
+        <footer class="gradient-background">
+            <a class="opac-link txt2" href="./contact_me.html" style="font-size: 19pt;">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>

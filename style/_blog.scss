@@ -1,0 +1,25 @@
+#whole-page {
+    #main-blog {
+        .container {
+            min-height: 80vh;
+            margin-bottom: 60px;
+            position: relative;
+            .row {
+                & .blog-grid {
+                    margin-top: 20px;
+                    display: grid;
+                    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+                    & .grid-item {
+                        border: 1pt solid white;
+                        min-height: 300px;
+                        & h2 {
+                            display: flex;
+                            @include cent-all();
+                            @include top-line();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

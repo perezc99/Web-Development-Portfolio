@@ -1,0 +1,122 @@
+// & > .cont-grid-item {
+    //   /* border: 1px solid #78A083;   */
+    //   /* display: flex; */
+    //   display: table; 
+    //   /* justify-content: center;
+    //   align-items: center; */
+    //   text-align: center;
+    // }
+
+/* .cont-grid-item2::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .cont-grid-item2 > p {
+    min-width: none;
+  } */
+
+  //media (min-height: 100vw) {
+  // footer {
+  //   color: green;
+  //   position: bottom;
+  //   bottom: 0;
+  // }
+// } 
+
+/* .course-content {
+    float: left;
+  } */
+
+// a.course-desc, u[name-target-attr="name"] {
+  //  text-decoration: none;
+  // } 
+
+
+// .container2 {
+//   /* border: 2px solid #50727B;
+//   background-color: #303040;  */
+//   margin-top: 35px;
+//   color: white;
+//   padding: 15px;
+//   min-width: 85%;
+//   position: relative;
+//   min-height: 82vh; 
+//   /* margin-bottom: 10em; */
+// }
+
+
+//.container2 {
+  /* max-width: 250px; */
+  //padding: 1rem;
+  //position: relative;
+  /* background: linear-gradient(to right, red, purple); */
+  //padding: 3px;
+
+//   position: relative;
+//   padding: 30% 2em;
+//   box-sizing: border-box;
+  
+//   $border: 5px;
+//   color: #FFF;
+//   background: #000;
+//   background-clip: padding-box; /* !importanté */
+//   border: solid $border transparent; /* !importanté */
+//   border-radius: 1em;
+
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: 0; right: 0; bottom: 0; left: 0;
+//     z-index: -1;
+//     margin: -$border; /* !importanté */
+//     border-radius: inherit; /* !importanté */
+//     background: linear-gradient(to right, red, orange);
+//   }
+//}
+
+/* .module {
+  background: #222;
+  color: white;
+  padding: 2rem;
+} */
+
+/* .container2::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border: 5px solid #50727B;
+
+  border-right: 0;
+  border-bottom: 0;
+  
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;   
+}  
+
+.container2::after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border: 5px solid linear-gradient(to left,  #35374B, #344955, #50727B, #78A083);
+  background-size: 180% 180%; 
+  animation: gradient-animation 8s ease infinite;
+  
+  border-top: 0;
+  border-left: 0;
+  
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;   
+}  */
+
+/* transform: translateX(0%); */
+
+// .education {
+//     background-color: #303040;
+//     color: white;
+// }
