@@ -71,6 +71,43 @@ $(".st-ment").click(function(){
     });
 });
 
+$(".left-eye").hover
+    (function(){
+        $eye = $(this);
+        $eye.addClass("tmp-eye");
+        $eye.html('<div class="hover-eye email"> <img src="../svg files/svg contact/envelope.svg" alt="envelope symbol" class="imger-contact"> <h4>bus.ces.per@gmail.com</h4> </div>');
+    }, function(){ 
+        $eye = $(this);
+        $eye.removeClass("tmp-eye");
+        $eye.html('<img src="../svg files/svg contact/envelope.svg" alt="envelope symbol" class="imger-contact">')
+    }
+);
+
+$(".left-eye").click(function(){
+    var copyText = "bus.ces.per@gmail.com";
+    navigator.clipboard.writeText(copyText);
+    alert("Copied text: " + copyText);
+});
+
+$(".right-eye").hover
+    (function(){
+        $eye = $(this);
+        $eye.addClass("tmp-eye");
+        $eye.html('<div class="hover-eye phone"> <img src="../svg files/svg contact/telephone.svg" alt="telephone symbol" class="imger-contact"> <h4>323-365-4926</h4> </div>');
+    }, function(){ 
+        $eye = $(this);
+        $eye.removeClass("tmp-eye");
+        $eye.html('<img src="../svg files/svg contact/telephone.svg" alt="telephone symbol" class="imger-contact">')
+    }
+);
+
+$(".right-eye").click(function(){
+    var copyText = "323-365-4926";
+    navigator.clipboard.writeText(copyText);
+    alert("Copied text: " + copyText);
+});
+
+
 
 // Just For Fun. Enjoy finding new constellations ;-)
 
