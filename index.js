@@ -108,9 +108,6 @@ $(".right-eye").click(function(){
 });
 
 
-
-// Just For Fun. Enjoy finding new constellations ;-)
-
 $(function($){
   
     function generateStar(canvas, ctx, starRadius){
