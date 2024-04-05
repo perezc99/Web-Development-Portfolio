@@ -145,7 +145,7 @@
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   display: grid;
-  grid-template: 0.1fr 10fr 0.01fr/0.01fr 10fr 0.01fr;
+  grid-template: 0.01fr 10fr 0.01fr/0.01fr 10fr 0.01fr;
   min-width: 100%;
 }
 #whole-page #main-page .container .row .main-cont .top-abt {
@@ -395,7 +395,7 @@
   height: 40px;
   margin-left: 4px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 #education .container .row .cont-grid2 .cont-grid-item2 .cont-card-item-mid p {
   order: 4;
@@ -578,7 +578,7 @@
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(27deg) brightness(99%) contrast(103%);
 }
 
-canvas {
+#whole-page > canvas {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -625,88 +625,111 @@ canvas {
   width: 75px;
 }
 
-#whole-page #main-contact {
-  position: absolute;
-  top: 15%;
-  bottom: 15%;
-  left: 15%;
-  right: 15%;
-}
-#whole-page #main-contact .container {
+#whole-page #main-contact .container .row .border-for-drawing {
+  background-color: #35374B;
+  display: grid;
+  grid-template: 0.01fr 10fr 0.01fr/0.01fr 10fr 0.01fr;
   min-width: 100%;
-  min-height: 100%;
   padding: 0;
 }
-#whole-page #main-contact .container .row .left-eye {
-  border-radius: 50%;
-  border: 3px solid white;
-  height: 75px;
-  width: 75px;
-  position: absolute;
-  top: 30%;
-  left: 35%;
+#whole-page #main-contact .container .row .border-for-drawing .top-abt {
+  grid-area: 1/2/2/3;
+  min-height: 20px;
+  margin-bottom: 5px;
 }
-#whole-page #main-contact .container .row .contact-cont {
+#whole-page #main-contact .container .row .border-for-drawing .left-abt {
+  grid-area: 1/1/4/2;
+  min-width: 20px;
+  border-top-left-radius: 25px;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing {
+  padding: 0;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  min-width: 70vw;
 }
-#whole-page #main-contact .container .row .contact-cont .imger-contact {
-  height: 45px;
-  width: 45px;
-  filter: invert(63%) sepia(32%) saturate(288%) hue-rotate(84deg) brightness(89%) contrast(85%);
+#whole-page #main-contact .container .row .border-for-drawing .drawing #poepidy-drawing {
+  position: relative;
+  min-width: 100%;
+  z-index: 5;
 }
-#whole-page #main-contact .container .row .right-eye {
-  border-radius: 50%;
-  border: 3px solid white;
-  height: 75px;
-  width: 75px;
+#whole-page #main-contact .container .row .border-for-drawing .drawing .contact-cont {
   position: absolute;
-  top: 30%;
-  right: 35%;
-}
-#whole-page #main-contact .container .row .tmp-eye {
-  transform: scale(5, 5);
   border-radius: 50%;
   border: 1px solid white;
+  background-color: #1d1d20;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 5%;
+  scale: 1 2;
 }
-#whole-page #main-contact .container .row .tmp-eye .hover-eye {
+#whole-page #main-contact .container .row .border-for-drawing .drawing .contact-cont .imger-contact {
+  min-height: 55%;
+  min-width: 55%;
+  filter: invert(63%) sepia(32%) saturate(288%) hue-rotate(84deg) brightness(89%) contrast(85%);
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .contact-cont.left-eye {
+  top: 30%;
+  left: 38%;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .contact-cont.right-eye {
+  top: 30%;
+  right: 38%;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .tmp-eye {
+  z-index: 10;
+  border: none;
+  display: grid;
+  grid-template: 1f/2fr;
+  transform: scale(5);
+  border: 1px solid white;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .tmp-eye.left-eye {
+  top: 30%;
+  left: 38%;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .tmp-eye.right-eye {
+  top: 30%;
+  right: 38%;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .tmp-eye .hover-eye {
+  margin: 10% 2% 10% 2%;
+  display: grid;
+  grid-template: auto/auto;
+}
+#whole-page #main-contact .container .row .border-for-drawing .drawing .tmp-eye .hover-eye .eye-txt {
   height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-#whole-page #main-contact .container .row .tmp-eye .hover-eye .imger-contact {
-  margin-right: 3px;
-  height: 10px;
-  width: 10px;
-}
-#whole-page #main-contact .container .row .tmp-eye .hover-eye h4 {
-  font-size: 4pt;
+#whole-page #main-contact .container .row .border-for-drawing .drawing .tmp-eye .hover-eye .eye-txt p {
+  min-width: 100%;
+  font-size: 30%;
   padding: 0;
   margin: 0;
 }
-#whole-page #main-contact .container .row .tmp-eye2 {
-  border-radius: 50%;
-  border: 3px solid white;
-  height: 350px;
-  width: 350px;
-  position: absolute;
-  right: 0;
+#whole-page #main-contact .container .row .border-for-drawing .btm-abt {
+  grid-area: 3/2/4/3;
+  min-height: 20px;
 }
-#whole-page #main-contact .container .row .tmp-eye2 .hover-eye {
-  height: 100%;
-  width: 100%;
+#whole-page #main-contact .container .row .border-for-drawing .right-abt {
+  grid-area: 1/3/4/4;
+  min-width: 20px;
+  border-bottom-right-radius: 25px;
+}
+#whole-page #main-contact .container .row .legend {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#whole-page #main-contact .container .row .tmp-eye2 .hover-eye .imger-contact {
-  margin-right: 20px;
+  align-content: center;
+  text-align: justify;
+  width: 100%;
+  font-size: 8pt;
 }
 
 body {

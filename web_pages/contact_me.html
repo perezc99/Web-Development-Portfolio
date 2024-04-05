@@ -10,6 +10,7 @@
 
 <body>
     <div id="whole-page">
+        <canvas id="space"></canvas>
         <header class="gradient-background">
             <section id="nav-bar" class="nav-bar"></section>
         </header>
@@ -17,12 +18,37 @@
         <section id="main-contact">
             <div class="container">
                 <div class="row">
-                    <canvas id="poepidy-drawing" class="col-12"></canvas>
-                    <div class="left-eye email contact-cont">
-                        <img src="../svg files/svg contact/envelope.svg" alt="envelope symbol" class="imger-contact">
+                    <div class="border-for-drawing">
+                        <div class="top-abt gradient-background2"></div>
+                        <div class="left-abt gradient-background3"></div>
+                        <div class="drawing">
+                            <canvas id="poepidy-drawing" class="aaaa"></canvas>
+                            <div class="left-eye email contact-cont">
+                                <img src="../svg files/svg contact/envelope.svg" alt="envelope symbol" class="imger-contact">
+                                
+                            </div>
+                            <div class="right-eye phone contact-cont">
+                                <img src="../svg files/svg contact/telephone.svg" alt="telephone symbol" class="imger-contact">
+                            </div>
+                        </div>
+                        <div class="btm-abt gradient-background2"></div>
+                        <div class="right-abt gradient-background3"></div>
                     </div>
-                    <div class="right-eye phone contact-cont">
-                        <img src="../svg files/svg contact/telephone.svg" alt="telephone symbol" class="imger-contact">
+
+                    <div class="legend txt col-12">
+                        <p>
+                            <ul style="list-style-type: none; list-style-position: none;">
+                                <li>[1] Image based off my  
+                                    <a href="../images/Max_and_Poepidy.jpg" target=”_blank”>
+                                        Rottweiler, Poepidy (dog in back).
+                                    </a>
+                                    
+                                </li>
+                                <li>[2] Click on left eye to copy email to clipboard; wait for alert to make sure properly copied.</li>
+                                <li>[3] Click on right eye to copy phone to clipboard; wait for alert to make sure properly copied.</li>
+                                <li>[4] If on device with mouse, you can hover over eyes to see the full values.</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -30,6 +56,8 @@
         <script src="../libraries/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="../index.js"></script>
+        <script src="../js_files/js2.js"></script>
+
 
         <script> $("document").ready((function() { $("#nav-bar").load("../website_components/nav.html"); })); </script>  
         

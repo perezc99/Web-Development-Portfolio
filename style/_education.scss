@@ -149,7 +149,7 @@
                             height: 40px;
                             margin-left: 4px;
                             display: flex;
-                            align-items: end;
+                            align-items: flex-end;
                         }
                         & p {
                             order: 4;
@@ -197,4 +197,3 @@
         }
     }
 }
-
