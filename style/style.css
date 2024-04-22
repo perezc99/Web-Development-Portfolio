@@ -732,6 +732,14 @@
   font-size: 8pt;
 }
 
+#whole-page #main-resume .container {
+  position: relative;
+}
+#whole-page #main-resume .container .row .resume-cont .pdf {
+  width: 100%;
+  aspect-ratio: 5/3;
+}
+
 body {
   background-color: #1d1d20;
   color: white;

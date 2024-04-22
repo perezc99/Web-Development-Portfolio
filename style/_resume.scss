@@ -1,0 +1,15 @@
+#whole-page {
+    #main-resume {
+        .container {
+            position: relative;
+            .row {
+                .resume-cont {
+                    .pdf {
+                        width: 100%;  
+                        aspect-ratio: 5 / 3;
+                    }
+                }
+            }
+        }
+    }
+}
